@@ -7,6 +7,19 @@ gem 'rails', '3.0.0.beta3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+gem 'formtastic', :git => "git://github.com/justinfrench/formtastic.git", :branch => 'rails3'
+gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
+gem 'will_paginate', '>= 3.0.pre'
+gem 'compass', '>= 0.10.0.rc4'
+gem 'compass-colors' # rails 3
+gem 'fancy-buttons' # rails 3
+
+group :test do
+  gem "factory_girl", :git => "git://github.com/szimek/factory_girl.git", :branch => "rails3"
+  gem "shoulda", :git => "git://github.com/bmaddy/shoulda", :branch => "rails3"
+  gem 'mocha'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
