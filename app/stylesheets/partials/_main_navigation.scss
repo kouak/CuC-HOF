@@ -1,0 +1,34 @@
+@import "blueprint";
+@import "theme";
+
+@import "blueprint/fancy_type";
+
+
+@mixin main_navigation {
+  border-style: dotted;
+  border-color: $complement_accent_color;
+  border-width: 1px 0;
+  background-color: white;
+  display: block;
+  margin: 1em 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    li {
+      float: left;
+      margin: 0 2em;
+      a {
+        text-decoration: none;
+        font-family: Geneva, Tahoma, Verdana, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 1.3em;
+        line-height: 2em;
+        display: block;
+        margin: 0 auto;
+        color: #444444;
+        &:hover, &:active {
+          color: $complement_support_color;
+          text-decoration: underline; } } } } }

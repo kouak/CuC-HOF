@@ -1,0 +1,15 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Vote:</b>
+  <%= @vote_option.vote_id %>
+</p>
+
+<p>
+  <b>Outfit:</b>
+  <%= @vote_option.outfit_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_vote_option_path(@vote_option) %> |
+<%= link_to 'Back', vote_options_path %>

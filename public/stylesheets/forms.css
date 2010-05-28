@@ -1,0 +1,382 @@
+/* line 157, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic ul, body.bp form.formtastic ol, body.bp form.formtastic legend, body.bp form.formtastic p {
+  margin: 0;
+  padding: 0;
+}
+/* line 160, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 166, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic fieldset {
+  display: block;
+  *display: inline-block;
+}
+/* line 110, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic fieldset:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 170, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic abbr, body.bp form.formtastic acronym {
+  border: 0;
+  font-variant: normal;
+  font-weight: normal;
+}
+/* line 175, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic ol, body.bp form.formtastic ul {
+  list-style: none;
+}
+/* line 178, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic label {
+  display: block;
+  *display: inline-block;
+}
+/* line 110, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 182, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic input, body.bp form.formtastic textarea {
+  vertical-align: middle;
+}
+/* line 186, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .check_boxes input, body.bp form.formtastic .radio input, body.bp form.formtastic .boolean input {
+  margin: 0;
+}
+/* line 188, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .check_boxes label, body.bp form.formtastic .radio label, body.bp form.formtastic .boolean label {
+  cursor: pointer;
+}
+/* line 191, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .hidden {
+  display: none;
+}
+/* line 195, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .date li, body.bp form.formtastic .time li, body.bp form.formtastic .datetime li {
+  float: left;
+  width: auto;
+  clear: none;
+}
+/* line 199, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .date label, body.bp form.formtastic .time label, body.bp form.formtastic .datetime label {
+  width: auto;
+}
+/* line 202, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .date input, body.bp form.formtastic .time input, body.bp form.formtastic .datetime input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 207, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .errors {
+  list-style: square;
+}
+/* line 209, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+  float: none;
+  clear: both;
+}
+/* line 215, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .inputs {
+  z-index: 99;
+}
+/* line 218, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .buttons li {
+  float: left;
+}
+/* line 221, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li {
+  *display: inline-block;
+  display: block;
+}
+/* line 110, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 224, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li fieldset {
+  border: none;
+  position: relative;
+  margin-top: 0px;
+}
+/* line 228, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li legend {
+  display: block;
+  margin-bottom: 0;
+}
+/* line 231, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li .label {
+  display: block;
+  clear: both;
+  background: transparent;
+}
+/* line 236, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li ol {
+  float: left;
+  margin: 0;
+}
+/* line 239, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li ol li {
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+/* line 333, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic fieldset {
+  width: 100%;
+}
+/* line 335, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic label {
+  float: left;
+  width: 20%;
+  text-align: left;
+  padding-left: 0;
+}
+/* line 341, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li ol {
+  padding: 0 50% 0 20%;
+}
+/* line 344, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li fieldset legend, body.bp form.formtastic li fieldset legend .label {
+  display: block;
+}
+/* line 346, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li fieldset legend {
+  width: 20%;
+  text-align: left;
+  display: inline;
+  float: left;
+  clear: none;
+  padding: 0;
+  width: 100%;
+}
+/* line 349, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li fieldset .label {
+  position: absolute;
+  width: 20%;
+  top: 0px;
+  left: 0;
+}
+/* line 357, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li fieldset label {
+  padding-left: 0;
+}
+/* line 359, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li fieldset label, body.bp form.formtastic li fieldset input {
+  width: auto;
+  display: inline;
+  clear: none;
+  text-align: left;
+}
+/* line 364, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic li fieldset select {
+  padding: 0;
+  clear: both;
+  display: block;
+}
+/* line 368, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .inline-hints, body.bp form.formtastic .inline-errors, body.bp form.formtastic .errors {
+  margin: 0 0 0 20%;
+}
+/* line 370, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic input, body.bp form.formtastic textarea {
+  width: 70%;
+}
+/* line 372, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic select {
+  width: auto;
+}
+/* line 378, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .checkbox li, body.bp form.formtastic .radio li {
+  display: block;
+  clear: both;
+}
+/* line 381, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .checkbox input, body.bp form.formtastic .radio input {
+  border: none;
+}
+/* line 383, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .buttons {
+  padding-left: 20%;
+  width: 80%;
+}
+/* line 386, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .buttons input {
+  width: auto;
+}
+/* line 391, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic .buttons li {
+  width: auto;
+  float: left;
+  display: inline;
+}
+/* line 402, ../../app/stylesheets/partials/_formtastic_base.scss */
+body.bp form.formtastic #errorExplanation {
+  margin-left: 20%;
+  width: 70%;
+}
+/* line 10, ../../app/stylesheets/forms.scss */
+body.bp form input.delete {
+  color: fuchsia;
+  border: 0;
+  text-indent: -9999px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(/images/icons/cross.png);
+}
+
+/* line 22, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic li {
+  padding: 10px 0px;
+}
+/* line 25, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic li li {
+  padding: 0;
+}
+/* line 30, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic fieldset {
+  margin-top: 20px;
+}
+/* line 34, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic li fieldset {
+  padding: 0;
+}
+/* line 39, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic legend, body.bp form.formtastic label {
+  color: #333333;
+}
+/* line 42, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic label, body.bp form.formtastic .label {
+  padding-bottom: 5px;
+}
+/* line 45, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic label abbr, body.bp form.formtastic .label abbr {
+  border: 0;
+  color: red;
+}
+/* line 48, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic label {
+  line-height: 1.4em;
+  font-size: 13px;
+}
+/* line 52, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic legend span {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+/* line 56, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic legend span.label {
+  font-size: 1em;
+}
+/* line 61, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic select {
+  padding: 3px;
+}
+/* line 63, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic input, body.bp form.formtastic textarea, body.bp form.formtastic select {
+  font-family: inherit;
+  font-size: 14px;
+}
+/* line 66, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic textarea, body.bp form.formtastic input {
+  border: 1px solid #999999;
+  padding: 6px 8px;
+  line-height: 100%;
+}
+/* line 74, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .date li, body.bp form.formtastic .time li, body.bp form.formtastic .datetime li {
+  margin: 0 0.3em 0 0;
+}
+/* line 82, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic #errorExplanation li {
+  margin-left: 15px;
+}
+/* line 84, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic form p, body.bp form.formtastic .errors {
+  padding: 3px 0px;
+}
+/* line 87, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .required input, body.bp form.formtastic .required textarea, body.bp form.formtastic .required select {
+  background-color: white;
+}
+/* line 90, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .error input, body.bp form.formtastic .error textarea, body.bp form.formtastic .error select {
+  background-color: #ffcccc;
+  border: 1px solid #ff6666;
+}
+/* line 94, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .optional input, body.bp form.formtastic .optional textarea, body.bp form.formtastic .optional select {
+  background-color: white;
+}
+/* line 96, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .errors {
+  color: #aa0000;
+}
+/* line 98, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .errors li {
+  margin-left: 1.2em;
+}
+/* line 100, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic p.inline-errors {
+  color: red;
+}
+/* line 102, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic p.inline-hints {
+  color: #777777;
+}
+/* line 107, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .buttons {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 8px;
+}
+/* line 111, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .buttons li {
+  padding-right: 0.5em;
+}
+/* line 113, ../../app/stylesheets/forms.scss */
+body.bp form.formtastic .buttons input {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+  margin: 0.7em 0.5em 0.7em 0;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 78, ../../../../../.rvm/gems/ruby-1.9.1-p378/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+body.bp form.formtastic .buttons input img {
+  margin: 0 3px -3px 0 !important;
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+  float: none;
+}

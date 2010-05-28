@@ -1,0 +1,8 @@
+<% semantic_form_for([@poll, @outfit]) do |f| %>
+  <%= f.input :image_url %>
+  <%= f.input :title %>
+  <%= f.input :member_name %>
+  <% f.buttons do %>
+    <%= f.submit %>
+  <% end %>
+<% end %>

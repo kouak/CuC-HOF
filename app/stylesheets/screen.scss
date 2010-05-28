@@ -1,0 +1,90 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+@import "partials/flash_messages";
+@import "partials/main_header";
+@import "partials/main_navigation";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+@import "compass/css3/gradient";
+@import "compass/utilities/links/hover_link";
+
+@import "theme";
+
+// Import the non-default scaffolding module.
+// @import "blueprint/scaffolding";
+
+// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
+// +blueprint
+
+//Recommended Blueprint configuration with scoping and semantic layout:
+//@include blueprint-scaffolding("body.bp");
+
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  //@include blueprint-debug;
+  //@include blueprint-interaction;
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+}
+
+form.bp {
+  @include blueprint-form;
+}
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.bp {
+  a {
+    @include hover-link;
+  }
+  #header-wrap {
+    width: 100%;
+    background-color: $header_background_color;
+    #header {
+      @include container;
+      #search {
+        float: right;
+        clear: both;
+        margin-top: 15px;
+      }
+      #user_login_box {
+        margin-top: 10px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        letter-spacing: 0.1em;
+        float: right;
+        clear: both;
+      }
+      h1 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-variant: small-caps;
+        display: inline;
+        font-size: 4em;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  #main-wrap {
+    @include linear-gradient(color_stops($header_background_color, #FFF));
+    #container {
+      @include container;
+      #flash {
+        @include flash_messages;
+      }
+      #main-navigation {
+        @include column($blueprint-grid-columns);
+        @include main_navigation;
+      }
+      #footer {
+        @include column($blueprint-grid-columns);
+      }
+    }
+  }
+}

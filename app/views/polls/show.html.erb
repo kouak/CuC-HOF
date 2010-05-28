@@ -1,0 +1,28 @@
+<% if @poll.pending? %>
+<p>
+  <b>Ce vote débutera le:</b>
+  <%= @poll.start %>
+</p>
+<% elsif @poll.ongoing? %>
+<p>
+  <b>Ce vote se terminera le:</b>
+  <%= @poll.end %>
+</p>
+<% else %>
+<p>
+  <b>Ce vote s'est terminé le:</b>
+  <%= @poll.end %>
+</p>
+<% end %>
+
+<h3>Tenues proposées :</h3>
+<div id="outfits">
+<% @poll.outfits.each do |outfit| %>
+<div class="outfit">
+  <%= image_tag(outfit.image_url, :width => '200px')%>
+  <br />
+  <span class="author"><%= outfit.member_name %></span>
+  <%= button_to "Voter pour cette tenue", vote_up_poll_outfit_path(@poll, outfit) %>
+</div>
+<% end %>
+<%= link_to 'Proposer une tenue', new_poll_outfit_path(@poll) %>

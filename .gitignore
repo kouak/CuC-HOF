@@ -8,3 +8,4 @@ test/fixtures/*
 coverage.data
 coverage/*
 rerun.txt
+vendor/*

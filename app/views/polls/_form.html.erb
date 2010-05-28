@@ -1,0 +1,9 @@
+<%= semantic_form_for(@poll) do |f| %>
+
+  <%= f.input :start, :value => Time.now%>
+  <%= f.input :end %>
+  <%= f.input :title %>
+  <% f.buttons do %>
+    <%= f.submit %>
+  <% end %>
+<% end %>

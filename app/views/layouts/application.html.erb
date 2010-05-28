@@ -1,14 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>CucHof</title>
-  <%= stylesheet_link_tag :all %>
+  <title><%= (yield(:title) || "Where to buy") %></title>
+  <%= stylesheet_link_tag 'screen.css', 'forms.css', :media => 'screen, projection' %>
+
+  <%= stylesheet_link_tag 'print.css', :media => 'print' %>
+  <!--[if lt IE 8]>
+    <%= stylesheet_link_tag 'ie6.css', :media => 'screen, projection' %>
+    <%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %>
+  <![endif]-->
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <%= yield(:head) %>
 </head>
-<body>
+<body class="bp">
+  <div id="header-wrap">
+    <div id="header">
+      <h1><%= link_to 'HallOfFame CuC', root_path %></h1>
+        <div id="user_login_box">
+          <% if user_signed_in? %>
+            <%= link_to 'My account', edit_user_registration_path, :id => 'my_account' %> /
+            <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+          <% else %>
+            <%= link_to 'Sign up', new_user_registration_path %> /
+            <%= link_to 'Sign in', new_user_session_path %>
+          <% end %>
+      </div>
+    </div>
+  </div>
+  <div id="main-wrap">
+    <div id="container">
+      <div id="main-navigation">
+        <%= navigation_menu %>
+      </div>
+      
+      <% if show_title? -%>
+      <h1 id="main-title"><%= yield(:title) %></h1>
+      <% end -%>
 
-<%= yield %>
+      <% flash.each do |name, msg| -%>
+        <%= content_tag :div, content_tag(:span, msg), :id => "flash", :class => name %>
+      <% end -%>
 
+      <%= yield or yield(:content) %>
+    </div>
+    <div id="footer">
+      <p>This is a footer ... ©©©</p>
+    </div>
+  </div>
 </body>
 </html>

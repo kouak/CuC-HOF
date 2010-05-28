@@ -1,0 +1,67 @@
+@import blueprint/reset.sass
+
++blueprint-global-reset
+
+@import partials/base.sass
+@import partials/buttons.sass
+@import blueprint
+
+@import theme.sass
+
+@import compass/utilities/links/hover_link.sass
+@import partials/flash_messages
+
+
+body.bp
+  +blueprint-typography(true)
+  :font-family "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Lucida, Verdana, Tahoma, sans-serif
+  // Links
+  a
+    +hover-link
+  #container
+    +container
+  #footer
+    +column(!blueprint_grid_columns, true)
+
+// Header
+body.bp
+  +main-header
+
+// Main-wrap
+body.bp
+  #main-wrap
+    +linear-gradient(color_stops(!header_background_color, #FFF))
+    #main_navigation
+      +column(24, true)
+      +main_navigation
+    #flash
+      +flash_messages
+    #content
+      +column(24, true)  
+    #advertising
+      +column(24, true)
+      margin= 30px "auto"
+      img
+        display= "block"
+        margin= 0 "auto"
+    h1#main-title
+      +column(24, true)
+      color= !complement_accent_color
+      padding-bottom: 0.4em
+      font-size: 2.5em
+      border-bottom= 1px "solid" !border_color
+
+// Clearfix
+div.clear
+  clear= "both"
+  height= 0
+  padding= 0
+  margin= 0
+  overflow= "hidden"
+  
+// Textareas
+textarea
+  :resize vertical
+    
+
+

@@ -13,6 +13,9 @@ gem 'will_paginate', '>= 3.0.pre'
 gem 'compass', '>= 0.10.0.rc4'
 gem 'compass-colors' # rails 3
 gem 'fancy-buttons' # rails 3
+gem 'devise', '>= 1.1.rc1'
+
+gem 'state_machine'
 
 group :test do
   gem "factory_girl", :git => "git://github.com/szimek/factory_girl.git", :branch => "rails3"
@@ -37,3 +40,5 @@ end
 # group :test do
 #   gem 'webrat'
 # end
+gem "haml", ">=3.0.0"
+gem "compass", ">= 0.10.0"

@@ -1,0 +1,9 @@
+fr:
+  activerecord:
+    models:
+      user: 'Utilisateur'
+    attributes:
+      user:
+        password: 'Mot de passe'
+        password_confirmation: 'Mot de passe (confirmation)'
+        current_password: 'Mot de passe actuel'

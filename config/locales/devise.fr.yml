@@ -1,0 +1,36 @@
+fr:
+  errors:
+    messages:
+      not_found: "inconnu"
+      already_confirmed: "est déjà confirmé"
+      not_locked: "n'est pas vérouillé"
+
+  devise:
+    failure:
+      unauthenticated: "Vous devez être identifié pour continuer."
+      unconfirmed: Vous devez confirmer votre compte avant de continuer.
+      locked: "Votre compte est vérouillé"
+      invalid: "Email ou mot de passe inconnu."
+      invalid_token: "Token d'identification inconnu."
+      timeout: "Votre session a expiré, veuillez vous reconnecter."
+      inactive: "Votre compte n'a pas encore été activé."
+    sessions:
+      signed_in: "Vous êtes maintenant connecté."
+      signed_out: "Vous êtes maintenant déconnecté."
+    passwords:
+      send_instructions: "Vous allez recevoir un email contenant les informations pour mettre à jour votre mot de passe dans quelques minutes."
+      updated: "Votre mot de passe a bien été modifié. Vous êtes maintenant connecté."
+    confirmations:
+      send_instructions: "Vous allez recevoir un email contenant les informations pour confirmer votre compte dans quelques minutes."
+      confirmed: "Votre compte a été confirmé avec succès. Vous êtes maintenant connecté."
+    registrations:
+      signed_up: "Votre enregistrement a réussi. Vous allez recevoir un email pour confirmer votre compte."
+      updated: "Votre compte a été mis à jour avec succès."
+      destroyed: "Bonne route ! Votre compte a été supprimé avec succès."
+    unlocks:
+      send_instructions: "Vous allez recevoir un email contenant les informations pour dévérouiller votre compte dans quelques minutes."
+      unlocked: "Votre compte a été dévérouillé avec succès. Vous êtes maintenant connecté."
+    mailer:
+      confirmation_instructions: "Instructions de confirmation"
+      reset_password_instructions: "Instructions de mise à jour du mot de passe"
+      unlock_instructions: "Instruction de dévérouillage de compte"
