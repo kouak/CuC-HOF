@@ -19,7 +19,6 @@ gem 'state_machine'
 
 gem 'heroku'
 
-gem 'hassle'
 
 group :test do
   gem "factory_girl", :git => "git://github.com/szimek/factory_girl.git", :branch => "rails3"
@@ -44,5 +43,6 @@ end
 # group :test do
 #   gem 'shoulda'
 # end
-gem "haml", ">=3.0.0"
-gem "compass", ">= 0.10.0"
+gem "haml", "=3.0.2"
+gem "compass", ">= 0.10.0", :require => false
+gem 'hassle'
