@@ -17,9 +17,11 @@ gem 'devise', '>= 1.1.rc1'
 
 gem 'state_machine'
 
+gem 'heroku'
+
 group :test do
   gem "factory_girl", :git => "git://github.com/szimek/factory_girl.git", :branch => "rails3"
-  gem "shoulda", :git => "git://github.com/bmaddy/shoulda", :branch => "rails3"
+  gem "shoulda", :git => "git://github.com/getaroom/shoulda.git", :branch => "rails3"
   gem 'mocha'
 end
 
@@ -38,7 +40,7 @@ end
 # Bundle gems for certain environments:
 # gem 'rspec', :group => :test
 # group :test do
-#   gem 'webrat'
+#   gem 'shoulda'
 # end
 gem "haml", ">=3.0.0"
 gem "compass", ">= 0.10.0"
