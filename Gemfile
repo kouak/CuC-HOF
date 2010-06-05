@@ -19,6 +19,8 @@ gem 'state_machine'
 
 gem 'heroku'
 
+gem 'hassle'
+
 group :test do
   gem "factory_girl", :git => "git://github.com/szimek/factory_girl.git", :branch => "rails3"
   gem "shoulda", :git => "git://github.com/getaroom/shoulda.git", :branch => "rails3"
